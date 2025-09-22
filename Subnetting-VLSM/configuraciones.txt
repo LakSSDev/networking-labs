@@ -1,0 +1,20 @@
+Router> enable
+Router# configure terminal
+
+Router(config)# interface gigabitEthernet 0/0
+Router(config-if)# ip address 10.0.0.1 255.255.255.192
+Router(config-if)# no shutdown
+Router(config-if)# exit
+
+Router(config)# interface gigabitEthernet 0/1
+Router(config-if)# ip address 10.0.0.65 255.255.255.224
+Router(config-if)# no shutdown
+Router(config-if)# exit
+
+Router(config)# interface gigabitEthernet 0/2
+Router(config-if)# ip address 10.0.0.97 255.255.255.240
+Router(config-if)# no shutdown
+Router(config-if)# exit
+
+Router(config)# end
+Router# write memory

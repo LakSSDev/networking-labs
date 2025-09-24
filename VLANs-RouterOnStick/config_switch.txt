@@ -1,0 +1,40 @@
+enable
+configure terminal
+
+# Crear VLANs
+vlan 10
+ name ADMIN
+exit
+vlan 20
+ name VENTAS
+exit
+
+# Asignar puertos a VLAN 10
+interface fastEthernet 0/2
+ switchport mode access
+ switchport access vlan 10
+exit
+
+interface fastEthernet 0/3
+ switchport mode access
+ switchport access vlan 10
+exit
+
+# Asignar puertos a VLAN 20
+interface fastEthernet 0/4
+ switchport mode access
+ switchport access vlan 20
+exit
+
+interface fastEthernet 0/5
+ switchport mode access
+ switchport access vlan 20
+exit
+
+# Configurar Fa0/1 como trunk hacia el router
+interface fastEthernet 0/1
+ switchport mode trunk
+exit
+
+end
+write memory

@@ -4,6 +4,9 @@
 Configurar VLANs en un switch Cisco y usar un Router-on-a-Stick para permitir comunicación entre dos VLANs.
 
 ## 🖥️ Topología
+
+<img width="781" height="659" alt="imagen" src="https://github.com/user-attachments/assets/263a66e0-c930-4cfc-b383-a5e10d1f30c2" />
+
 - Switch 2950
 - Router 2911
 - 4 PCs

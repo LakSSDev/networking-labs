@@ -1,0 +1,29 @@
+enable
+configure terminal
+
+vlan 10
+ name DOCENTES
+vlan 20
+ name ESTUDIANTES
+vlan 30
+ name INVITADOS
+
+! Asignación de PCs
+interface fa0/4
+ switchport mode access
+ switchport access vlan 10
+
+interface fa0/6
+ switchport mode access
+ switchport access vlan 20
+
+interface fa0/8
+ switchport mode access
+ switchport access vlan 30
+
+! Trunk hacia Switch3
+interface fa0/3
+ switchport mode trunk
+
+end
+write memory

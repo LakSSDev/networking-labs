@@ -1,1 +1,22 @@
 
+vlan 10
+ name DOCENTES
+vlan 20
+ name ESTUDIANTES
+vlan 30
+ name INVITADOS
+
+interface fa0/4
+ switchport mode access
+ switchport access vlan 10
+
+interface fa0/6
+ switchport mode access
+ switchport access vlan 20
+
+interface fa0/8
+ switchport mode access
+ switchport access vlan 30
+
+interface fa0/2
+ switchport mode trunk

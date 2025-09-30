@@ -1,0 +1,24 @@
+enable
+configure terminal
+
+vlan 10
+ name DOCENTES
+vlan 20
+ name ESTUDIANTES
+vlan 30
+ name INVITADOS
+
+! Trunk hacia Router0
+interface fa0/1
+ switchport mode trunk
+
+! Trunk hacia Switch1
+interface fa0/2
+ switchport mode trunk
+
+! Trunk hacia Switch2
+interface fa0/3
+ switchport mode trunk
+
+end
+write memory

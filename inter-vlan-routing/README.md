@@ -4,7 +4,8 @@
 Implementar segmentación de red con VLANs y permitir comunicación entre ellas usando Router-on-a-Stick.
 
 ## 🖥️ Topología
-![Topología](topology.png)
+<img width="1132" height="670" alt="imagen" src="https://github.com/user-attachments/assets/826fe9ea-e698-4615-8feb-1f6c0d774179" />
+
 
 ## 📌 VLANs utilizadas
 - VLAN 10 (Docentes) – 172.17.10.0/24
